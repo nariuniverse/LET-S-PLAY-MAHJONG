@@ -2,7 +2,7 @@
 
 ## 작업 위치와 재개
 
-실제 개발 루트는 `C:\AI\mamamo`다. 이전 원본 `C:\Users\QCELLS\Documents\mamamo-trainer`는 수정하지 않는다. 재개할 때 `README.md`, `docs/RESUME.md`, `docs/engine-validation.md`, `docs/TOMORROW.md`를 먼저 읽는다. 현재 규칙 엔진과 최적 타패(레벨 1·2·3), 청일색 대기, 화료 점수 웹 연습이 구현되어 있다. 화료 점수 계산표를 언제든 열 수 있다. 제목은 `LET'S PLAY MAHJONG`, 타패 판정 표시는 `최적 / 공동 최적 / 효율 낮음`이다. 공개 인터넷 주소는 아직 없다.
+실제 개발 루트는 `C:\AI\mamamo`다. 이전 원본 `C:\Users\QCELLS\Documents\mamamo-trainer`는 수정하지 않는다. 재개할 때 `README.md`, `docs/RESUME.md`, `docs/engine-validation.md`, `docs/TOMORROW.md`를 먼저 읽는다. 현재 규칙 엔진과 최적 타패(레벨 1·2·3), 청일색 대기, 화료 점수 웹 연습이 구현되어 있다. 화료 점수 계산표를 언제든 열 수 있다. 제목은 `LET'S PLAY MAHJONG`, 타패 판정 표시는 `최적 / 공동 최적 / 효율 낮음`이다. 공개 주소는 `https://lets-play-mahjong.onrender.com/`이며 Render 무료 플랜에서 운영한다.
 
 ## 프로젝트 구조
 

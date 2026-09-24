@@ -1,8 +1,8 @@
 ﻿# 개발 재개 기록 — 2026-09-22부터
 
-## 최신 상태 — 2026-09-23
+## 최신 상태 — 2026-09-24
 
-현재 규칙 엔진과 세 가지 웹 연습, 레벨 선택, 점수 계산표, 픽셀 아바타, 사이트 공용 방문자 수가 구현되어 있다. 웹의 아바타 다운로드 링크는 제거했다. 재개 명령과 남은 공개 작업은 [TOMORROW.md](TOMORROW.md), 작업 원칙은 [AGENTS.md](../AGENTS.md)를 확인한다. 마지막 `npm.cmd run check:web`: 14파일 472개 테스트·타입·린트·엔진/웹 빌드 통과. 공개 주소는 아직 발급하지 않았다.
+현재 규칙 엔진과 세 가지 웹 연습, 레벨 선택, 점수 계산표, 픽셀 아바타, 사이트 공용 방문자 수가 구현되어 있다. 웹의 아바타 다운로드 링크는 제거했다. 재개 명령과 공개 운영 상태는 [TOMORROW.md](TOMORROW.md), 작업 원칙은 [AGENTS.md](../AGENTS.md)를 확인한다. 마지막 `npm.cmd run check:web`: 14파일 472개 테스트·타입·린트·엔진/웹 빌드 통과. 공개 주소는 `https://lets-play-mahjong.onrender.com/`이다.
 
 
 ## 작업 위치
@@ -105,3 +105,5 @@ PC/모바일 아바타 확대, 별도 투명 PNG/ZIP, 화면 다운로드 링크
 이후 사용자 지정 GitHub 주소 `https://github.com/nariuniverse/LET-S-PLAY-MAHJONG`을 `origin`으로 설정하고 로컬 첫 커밋 `3af903f`을 만들었다. GitHub 연결은 현재 세션에서 미활성으로 확인됐고 Git CLI에도 인증 정보가 없어 원격 이력을 읽거나 푸시하지 못했다. Render 배포는 아직 시작되지 않았다.
 
 Git 자격 증명 도구에서 사용자가 직접 로그인한 뒤 빈 원격 저장소를 확인하고 `main`을 푸시했다. 원격 커밋 `ef96412` 확인 완료. 공식 Render CLI v2.28.0을 `tmp/render-cli/`에 다운로드하고 SHA-256을 검증했지만 CLI 인증 승인 화면이 열리지 않아 중단했다. 사용자가 Render 대시보드에서 **New > Blueprint**로 저장소를 연결한 후 발급된 주소를 보내면 외부 동작을 검증한다.
+
+사용자가 Render 대시보드에서 Blueprint를 배포해 `https://lets-play-mahjong.onrender.com/`를 발급했다. 외부 HTML·JS·CSS, 방문자 API GET·POST 모두 HTTP 200. 시험 방문 1건이 집계되고 쿠키가 설정됐으며 조회에서 같은 수치를 확인했다. Render 무료 서버이므로 유휴 종료·재시작·재배포 때 파일 기반 방문자 기록은 초기화될 수 있다.

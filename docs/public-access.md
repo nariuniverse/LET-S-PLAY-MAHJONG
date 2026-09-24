@@ -26,4 +26,4 @@
 
 ## 현재 상태
 
-공개 주소는 아직 만들지 않았다. Render 무료 배포 설정을 준비했고 `https://github.com/nariuniverse/LET-S-PLAY-MAHJONG`의 `main`에 업로드했다. 원격 `main` 커밋 `ef96412`를 확인했다. Render CLI 인증 화면이 이 환경에서 열리지 않아 사용자가 대시보드의 **New > Blueprint**에서 저장소를 연결해야 한다. `npm.cmd run check:web`에서 14파일 472개 테스트와 빌드가 통과했고 `HOST=0.0.0.0` 운영 서버에서 화면·방문자 API의 HTTP 200을 확인했다. 이 PC에서 `cloudflared` 명령은 확인되지 않았다.
+사용자가 Render 대시보드에서 Blueprint를 배포해 공개 주소 `https://lets-play-mahjong.onrender.com/`를 발급했다. GitHub 저장소는 `https://github.com/nariuniverse/LET-S-PLAY-MAHJONG`의 `main`이다. 외부 주소의 HTML·JS·CSS와 `/api/visitors` GET·POST에서 HTTP 200을 확인했다. 시험 방문 1건이 집계되고 쿠키가 설정됐으며 GET에서 같은 수치를 다시 읽었다. 마지막 로컬 `npm.cmd run check:web`은 14파일 472개 테스트와 빌드 통과. 무료 서버의 파일 기반 방문자 기록은 유휴 종료·재시작·재배포 때 초기화될 수 있다.

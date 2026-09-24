@@ -22,9 +22,7 @@ npm.cmd run dev             # 개발 웹: http://127.0.0.1:5173/
 
 ## 다음 선택
 
-사용자는 Render 무료 배포를 선택했다. `render.yaml`과 `.node-version`을 준비했고 세부 절차는 `docs/public-access.md`에 있다. 다음 단계는 GitHub 비공개 저장소와 Render 계정을 연결해 Blueprint를 배포하고 `onrender.com` 주소를 확인하는 것이다. **아직 공개 주소 발급·배포는 하지 않았다.** 방문자 수 파일은 무료 서버의 유휴 종료·재시작·재배포 때 초기화될 수 있다. Git 저장소에 원본 사진이나 `.data`, `artifacts/`의 별도 아바타 파일을 넣지 않는다.
-로컬 Git 첫 커밋 `3af903f`을 만들고 `origin`을 `https://github.com/nariuniverse/LET-S-PLAY-MAHJONG`으로 지정했다. GitHub 인증이 확인되지 않아 원격 조회와 푸시는 아직 못 했다. 전체 `check:web` 14파일 472개 테스트와 빌드, 운영 서버 화면·방문자 API의 HTTP 200을 확인했다.
-이후 GitHub 로그인 후 `main` 푸시를 완료했고 원격 커밋 `ef96412`를 확인했다. Render CLI의 계정 승인 화면이 열리지 않아 아직 Render 배포는 하지 못했다. 사용자가 Render 대시보드의 **New > Blueprint**에서 이 저장소와 `main`을 연결하고 배포해야 한다. 발급된 `onrender.com` 주소를 받으면 화면과 방문자 API를 확인한다.
+Render 무료 배포를 완료했다. 공개 주소는 `https://lets-play-mahjong.onrender.com/`, GitHub 저장소는 `https://github.com/nariuniverse/LET-S-PLAY-MAHJONG`의 `main`이다. 외부 HTML·JS·CSS와 방문자 API GET·POST의 HTTP 200, 시험 방문 기록·쿠키를 확인했다. 전체 `check:web`은 14파일 472개 테스트와 빌드 통과. 무료 서버의 방문자 기록은 유휴 종료·재시작·재배포 때 초기화될 수 있다. Git 저장소에 원본 사진이나 `.data`, `artifacts/`의 별도 아바타 파일을 넣지 않는다. 세부 기록은 `docs/public-access.md`에 있다.
 
 ## 작업 기록
 

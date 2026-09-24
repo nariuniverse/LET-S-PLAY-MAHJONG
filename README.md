@@ -125,8 +125,8 @@ Work에서 `C:\AI\mamamo`를 프로젝트 폴더로 열고 다음처럼 요청�
 
 아바타는 PC 96px(좁은 사이드바 88px), 모바일 80px로 표시한다. 재사용 파일은 `artifacts/avatar/mahjong-avatar-transparent.png`, 묶음은 `artifacts/mahjong-avatar.zip`에 저장했다. 웹페이지에는 다운로드 링크를 표시하지 않는다.
 
-사이트 공용 방문자 수(오늘/누적)는 서버에 저장한다. 로컬 개발은 기존 `npm.cmd run dev`, 운영용은 `npm.cmd run check:web` 후 `npm.cmd run start:web`로 실행한다. 집계 기준과 영구 저장/배포 방법은 [docs/visitors.md](docs/visitors.md)를 참고한다. 공개 인터넷 배포는 아직 수행하지 않았다.
+사이트 공용 방문자 수(오늘/누적)는 서버에 저장한다. 로컬 개발은 기존 `npm.cmd run dev`, 운영용은 `npm.cmd run check:web` 후 `npm.cmd run start:web`로 실행한다. 집계 기준과 저장 한계는 [docs/visitors.md](docs/visitors.md)를 참고한다. Render 무료 서버에서는 유휴 종료·재시작·재배포 때 방문자 기록이 초기화될 수 있다.
 
 ## 다른 사람이 접속하기
 
-빠른 공유와 장기 운영 방법은 [공개 안내](docs/public-access.md)를 참고한다. 공개 주소는 아직 만들지 않았다.
+공개 주소: https://lets-play-mahjong.onrender.com/. 배포와 운영 방법은 [공개 안내](docs/public-access.md)를 참고한다.
