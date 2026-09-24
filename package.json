@@ -1,0 +1,43 @@
+{
+  "name": "mamamo-rules-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "rules:check": "node scripts/check-rules.mjs",
+    "rules:generate": "node scripts/generate-rules.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests scripts web vite.config.ts vitest.config.ts",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:regression": "vitest run tests/regression",
+    "test:random": "vitest run tests/random",
+    "build": "npm run rules:generate && tsc -p tsconfig.build.json",
+    "bench": "npm run build && node scripts/bench.mjs",
+    "check": "npm run rules:check && npm run rules:generate && npm run typecheck && npm run lint && npm test && npm run build",
+    "example": "npm run build && node scripts/example.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "build:web": "npm run rules:generate && tsc -p tsconfig.web.json && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:practice": "vitest run tests/practice",
+    "check:web": "npm run check && npm run build:web",
+    "start:web": "node scripts/serve-web.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.0.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^3.2.0",
+    "tsx": "^4.0.0",
+    "yaml": "^2.9.1",
+    "vite": "7.3.6"
+  }
+}

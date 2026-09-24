@@ -1,0 +1,73 @@
+"$schema": "https://json-schema.org/draft/2020-12/schema"
+title: "Riichi practice rule specification draft"
+type: "object"
+required: ["schemaVersion","ruleSet","status","source","inheritance","rules","yaku"]
+properties:
+  schemaVersion:
+    const: "0.1.0"
+  ruleSet:
+    enum: ["standard-riichi","mamamo"]
+  status:
+    type: "string"
+  source:
+    type: "object"
+  inheritance:
+    type: "null"
+  rules:
+    type: "array"
+    items:
+      "$ref": "#/$defs/rule"
+  yaku:
+    type: "array"
+    items:
+      "$ref": "#/$defs/rule"
+"$defs":
+  page:
+    type: "object"
+    required: ["source","pdf","printed"]
+    properties:
+      source:
+        enum: ["mamamo-pdf","ema-2025-snapshot"]
+      pdf:
+        type: "integer"
+        minimum: 1
+      printed:
+        type: ["string","null"]
+    additionalProperties: false
+  rule:
+    type: "object"
+    required: ["id","category","name","enabled","conditions","sourcePages","confidence"]
+    properties:
+      id:
+        type: "string"
+        pattern: "^[a-z][a-z0-9.-]+$"
+      category:
+        type: "string"
+      name:
+        type: "string"
+      enabled:
+        type: ["boolean","null"]
+      conditions:
+        type: "object"
+      closedValue:
+        type: ["integer","null"]
+        minimum: 0
+      openValue:
+        type: ["integer","null"]
+        minimum: 0
+      yakumanMultiplier:
+        type: "integer"
+        minimum: 1
+      sourcePages:
+        type: "array"
+        minItems: 1
+        items:
+          "$ref": "#/$defs/page"
+      confidence:
+        enum: ["high","medium","low","unknown"]
+      ambiguityIds:
+        type: "array"
+        items:
+          type: "string"
+          pattern: "^A[0-9]{2}$"
+"$comment": "조건 키는 engine-interface.md의 선언적 정책 데이터이며 실행식 평가 엔진이 아니다."

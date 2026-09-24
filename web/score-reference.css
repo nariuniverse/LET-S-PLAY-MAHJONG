@@ -1,0 +1,51 @@
+﻿.score-reference-open { position:fixed; right:24px; bottom:22px; z-index:8; border:2px solid #fff; box-shadow:0 4px 18px #173c3933; padding:12px 19px; font-size:16px; }
+.score-reference-open span { margin:0 6px 0 0; font-size:20px; }
+body.score-mode main { padding-bottom:90px; }
+.score-reference { padding:0; width:min(900px,calc(100% - 28px)); max-height:calc(100dvh - 32px); color:#263f38; background:#fffefa; border:1px solid #d9e3d6; border-radius:16px; box-shadow:0 24px 90px #09261e55; }
+.score-reference[open] { display:flex; flex-direction:column; }
+.score-reference::backdrop { background:#102c266e; }
+.reference-header { display:flex; align-items:center; justify-content:space-between; gap:15px; flex-shrink:0; padding:20px 26px; background:#f0f5eb; border-bottom:1px solid #dce5d7; }
+.reference-header p { margin:0 0 5px; font-size:14px; color:#53695e; }
+.reference-header h2 { margin:0; font-size:25px; }
+.reference-header button { flex-shrink:0; }
+.reference-body { padding:22px 26px 28px; overflow-y:auto; overscroll-behavior:contain; font-size:16px; line-height:1.8; }
+.reference-body p { margin-bottom:18px; word-break:keep-all; }
+.reference-controls { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:18px; }
+.reference-controls>div { display:flex; padding:4px; gap:4px; border:1px solid #d5dfd0; border-radius:9px; background:#f2f5ed; }
+.reference-controls button { font-size:15px; padding:9px 14px; min-height:44px; border:0; border-radius:6px; color:#405f4c; background:transparent; }
+.reference-controls button[aria-pressed="true"] { background:#21594d; color:white; }
+.reference-legend { padding:12px 15px; border-left:3px solid #658d66; background:#f0f5eb; font-size:16px; }
+.reference-table-scroll { overflow-x:auto; margin-bottom:14px; border:1px solid #dce3d6; border-radius:8px; }
+.reference-table { width:100%; margin:0; font-size:16px; line-height:1.55; border-collapse:collapse; table-layout:fixed; color:#263f38; }
+.reference-table caption { text-align:left; padding:12px 14px; font-weight:700; font-size:17px; }
+.reference-table th,.reference-table td { padding:12px 9px; text-align:center; border-bottom:1px solid #e1e6dc; white-space:normal; }
+.reference-table th { background:#eff4e9; color:#365543; font-weight:600; }
+.reference-table td { font-variant-numeric:tabular-nums; font-weight:600; }
+.reference-table td:nth-child(3) { min-width:0; }
+.reference-table tbody tr:nth-child(even) td { background:#fafbf6; }
+.reference-table th:first-child { width:74px; }
+.reference-table small { display:block; font-size:13px; font-weight:400; color:#667c6d; margin:2px 0 5px; }
+.reference-table .reference-limit { color:#527642; }
+.reference-limits { border:1px solid #dce3d6; margin:22px 0; }
+.reference-limits th:first-child { width:60%; text-align:left; padding-left:15px; }
+.reference-note { font-size:14px; color:#53695e; line-height:1.8; }
+.reference-additions { background:#f0f5eb; border-radius:10px; padding:18px 20px; margin-top:22px; }
+.reference-additions h3 { font-size:18px; margin-bottom:10px; }
+.reference-additions ul { padding-left:21px; margin:0 0 12px; }
+.reference-additions li { margin-bottom:8px; }
+.reference-additions p { margin:0; font-weight:600; }
+@media(max-width:600px) {
+  .score-reference-open { right:14px; bottom:14px; font-size:15px; padding:10px 15px; }
+  .reference-header { padding:16px; }
+  .reference-header h2 { font-size:22px; }
+  .reference-header button { padding:10px 12px; }
+  .reference-body { padding:18px 14px 24px; }
+  .reference-controls { gap:10px; }
+  .reference-controls button { font-size:14px; padding:8px 12px; }
+  .reference-table-scroll .reference-table { min-width:440px; }
+  .reference-table { font-size:15px; }
+  .reference-limits th:first-child { width:62%; }
+  .reference-additions { padding:16px; }
+}
+.reference-scroll-hint { display:none; }
+@media(max-width:600px) { .reference-scroll-hint { display:block; font-size:14px; color:#53695e; } }

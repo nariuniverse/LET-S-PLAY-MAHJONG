@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lets-play-mahjong
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build && npm run build:web
+    startCommand: npm run start:web
+    envVars:
+      - key: HOST
+        value: 0.0.0.0

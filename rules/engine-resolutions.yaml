@@ -1,0 +1,42 @@
+schemaVersion: 0.1.0
+ruleSet: mamamo
+status: approved_by_user
+source: conversation_approval
+resolutions:
+  E01:
+    greenDragonRequired: false
+    redDotRequiresRedDragon: true
+    redPeacockRequiresRedDragon: true
+  E02:
+    unrelatedDistinctSuitedRankMinimumGap: 3
+    unrelatedExactlyOnePair: true
+    shantenUsesStructuralForm: true
+    actualWinRequiresFirstOwnDrawWithoutCalls: true
+  E03:
+    knittedNineFu: 0
+    knittedCompletionWaitFu: 0
+    remainingMeldAndPairUseNormalFu: true
+    pinfuRequiresRemainingSequenceRyanmenAndNonValuePair: true
+    pinfuTsumoFu: 20
+    pinfuRonFu: 30
+  E04:
+    trigger: last_required_meld_fed_after_other_required_melds_exposed
+    exposedConcealedQuadsCount: true
+    liabilityScope: matched_yakuman_portion_only
+  E05:
+    multipleYakuman: sum_after_exclusions_and_inclusions
+    ordinaryHanAndDoraWithYakuman: false
+    supersedes: mamamo-rules.yaml/resolutions/A04/single_yakuman_wording
+  B01:
+    chantaRequiresSequence: true
+    chantaRequiresHonor: true
+    junchanRequiresSequence: true
+    junchanExcludesChanta: true
+  B02:
+    minimumHanAfterCompletedDealerWins: 5
+    appliesTo: all_players
+    doraExcluded: true
+  B03:
+    exhaustiveDrawFines: carry_in_separate_fine_pool
+    multipleWinnerRecipient: nearest_winner_after_discarder
+    chomboCurrentHandFines: refund

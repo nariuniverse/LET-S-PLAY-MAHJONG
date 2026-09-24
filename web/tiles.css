@@ -1,0 +1,44 @@
+﻿/* Ivory resin face, bevel and green backing shared by every tile size. */
+.tile {
+  isolation: isolate;
+  padding: 4px 3px 6px;
+  border: 1px solid #d6d2c1;
+  border-bottom: 5px solid #c9c2a8;
+  border-radius: 6px;
+  background: linear-gradient(115deg, #fffef7 0%, #faf7e9 65%, #ece7d3 100%);
+  box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 2px #b9ad8c38,
+    0 3px 0 #174e40, 0 4px 0 #103b32, 1px 6px 4px #001b2255;
+}
+.tile-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  filter: drop-shadow(0 .4px .2px #fffdf0);
+}
+button.tile:hover:not(:disabled) {
+  background: linear-gradient(115deg, #ffffff, #fffbee 75%, #eee7d2);
+  box-shadow: inset 1px 1px 0 #fff, 0 3px 0 #174e40, 0 4px 0 #103b32, 1px 9px 6px #001b2255;
+}
+button.tile.selected {
+  background: linear-gradient(115deg, #fffbed, #fff1c6);
+  border-color: #d1aa51;
+  border-bottom-color: #bd963e;
+  box-shadow: inset 1px 1px 0 #fff, 0 3px 0 #715322, 0 0 0 2px #e8c778, 1px 9px 6px #001b2255;
+}
+button.tile:disabled { opacity: 1; }
+.tile.mini {
+  width: 30px;
+  height: 43px;
+  padding: 2px 2px 3px;
+  box-shadow: inset 1px 1px 0 #fff, 0 2px 0 #174e40, 0 3px 2px #001b2226;
+}
+.meld-group .tile { padding: 2px 2px 3px; }
+.wait-results .tile { padding: 3px 2px 4px; }
+.wait-selection .tile { box-shadow: inset 1px 1px 0 #fff, 0 3px 0 #174e40, 0 5px 3px #173d2326; }
+.tile.winning { box-shadow: inset 1px 1px 0 #fff, 0 3px 0 #806329, 0 0 0 2px #dfc67388, 1px 6px 4px #001b2255; }
+@media (max-width: 480px) {
+  .tile { padding: 3px 2px 4px; border-radius: 5px; }
+  .wait-selection .tile { padding: 2px 1px 3px; }
+}

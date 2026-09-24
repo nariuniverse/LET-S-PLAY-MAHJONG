@@ -1,0 +1,18 @@
+﻿.difficulty { margin-bottom: 24px; }
+.difficulty-heading { display:flex; align-items:baseline; gap:12px; margin-bottom:12px; }
+.difficulty-heading h2 { font-size:14px; margin:0; letter-spacing:-.3px; }
+.difficulty-heading>span { font-size:11px; color:var(--muted); }
+.difficulty-options { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.level-button { display:flex; align-items:center; gap:12px; min-height:80px; padding:15px 16px; text-align:left; background:#fff; color:#425d50; border:1px solid #dce4d8; border-radius:11px; }
+.level-number { display:grid; place-items:center; flex-shrink:0; width:31px; height:35px; background:#eef2e9; border:1px solid #e1e7db; border-bottom:3px solid #d0dac8; border-radius:5px; color:#73866e; font-size:17px; font-weight:700; }
+.level-button strong { display:block; font-size:13px; }
+.level-button small { display:block; font-size:10px; font-weight:400; color:#73816f; margin-top:6px; line-height:1.6; }
+.level-check { margin-left:auto; color:var(--green); visibility:hidden; font-size:16px; }
+.level-button.active { border-color:#427c60; background:#eff5e9; box-shadow:0 0 0 1px #427c60; }
+.level-button.active .level-number { background:#21594d; color:#fffbea; border-color:#21594d; border-bottom-color:#123e34; }
+.level-button.active .level-check { visibility:visible; }
+.level-button:hover:not(.active) { border-color:#95b399; background:#fafcf7; }
+.stats #stats-scope { color:inherit; font-size:inherit; margin:0; }
+.level-explanation { padding:14px 17px; border-left:3px solid #698b4e; background:#f2f6ec; border-radius:0 6px 6px 0; }
+@media(max-width:1100px) { .level-button { padding:13px 10px; gap:9px; } .level-number { width:25px; height:31px; } .level-check { display:none; } .level-button small { font-size:9px; } }
+@media(max-width:600px) { .difficulty-heading { display:block; } .difficulty-heading>span { display:block; margin-top:5px; font-size:10px; } .difficulty-options { gap:8px; } .level-button { flex-direction:column; align-items:flex-start; padding:12px 10px; gap:9px; } .level-button strong { font-size:11px; } .level-button small { font-size:9px; line-height:1.7; margin-top:5px; } .level-number { width:25px; height:29px; font-size:14px; } }

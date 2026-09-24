@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+tmp/
+
+.backups/
+.npm-cache/
+
+web-dist/
+
+.data/
+
+photo_2026-09-23_10-32-49.jpg
+artifacts/
+docs/mamamo.pdf
+docs/avatar-prompt.md

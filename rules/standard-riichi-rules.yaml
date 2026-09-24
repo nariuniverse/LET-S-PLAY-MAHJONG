@@ -1,0 +1,2012 @@
+schemaVersion: "0.1.0"
+ruleSet: "standard-riichi"
+title: "EMA 2025 공개본 기반 4인 비대회 연습 프로필"
+status: "specified_default_profile"
+source:
+  id: "ema-2025-snapshot"
+  url: "https://mahjongbond.org/wp-content/uploads/2025/10/riichi_rulebook_2025_final_draft_26.09.2025.pdf"
+  publisher: "European Mahjong Association; Nederlandse Mahjong Bond 공개 미러"
+  edition: "2025 edition / August 2025; 배포 파일명 final_draft_26.09.2025"
+  sha256: "7B4713EB0F405FADE8E8268C78088785A8253AE761E44513983A474F2EABD1F0"
+  accessed: "2026-09-21"
+  pages: 46
+  scope: "비대회 분기 선택; 이 스냅샷이 근거이며 모든 리치마작의 절대 표준이 아님"
+inheritance: null
+options:
+  players:
+    default: 4
+    allowedValues: [4]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 7
+        printed: "7"
+    confidence: "high"
+    notes: "다른 인원수는 별도 엔진 범위."
+  startingPoints:
+    default: 30000
+    allowedValues: [25000,30000]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 6
+        printed: "6"
+    confidence: "high"
+    notes: ""
+  returnPoints:
+    default: 30000
+    allowedValues: [25000,30000]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 18
+        printed: "18"
+    confidence: "high"
+    notes: ""
+  gameLength:
+    default: "east-south"
+    allowedValues: ["east","east-south"]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 10
+        printed: "10"
+    confidence: "high"
+    notes: ""
+  kuitan:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+    notes: ""
+  atozuke:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 10
+        printed: "10"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 15
+        printed: "15"
+    confidence: "high"
+    notes: "화료 시점의 1역 요구에서 도출한 프로젝트 명시 옵션. 부름 시 역 확정 요구 없음."
+  redFives:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 6
+        printed: "6"
+    confidence: "high"
+    notes: ""
+  doubleRon:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 11
+        printed: "11"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  tripleRon:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 11
+        printed: "11"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  tripleRonResolution:
+    default: "all_win"
+    allowedValues: ["all_win","abortive_draw","head_bump"]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 11
+        printed: "11"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  abortiveDraws:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  fourWindsAbort:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  fourRiichiAbort:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  fourKansAbort:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 12
+        printed: "12"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  nineTerminalsAbort:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  bankruptcyEndsGame:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 18
+        printed: "18"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 22
+        printed: "22"
+    confidence: "high"
+    notes: ""
+  westExtension:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 18
+        printed: "18"
+    confidence: "high"
+    notes: ""
+  kiriageMangan:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 22
+        printed: "22"
+    confidence: "high"
+    notes: ""
+  kazoeYakuman:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 22
+        printed: "22"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+    notes: ""
+  multipleYakuman:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+    notes: ""
+  doubleYakuman:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    notes: ""
+  pao:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+    confidence: "high"
+    notes: ""
+  paoYaku:
+    default: ["yaku.daisangen","yaku.daisuushii"]
+    allowedValues: null
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+    confidence: "high"
+    notes: "목록형 사용자 옵션. 다른 역 추가 시 책임 발생 정책도 반드시 제공."
+  notenTotal:
+    default: 3000
+    allowedValues: [0,3000]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+    notes: ""
+  honbaRon:
+    default: 300
+    allowedValues: [0,300]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 17
+        printed: "17"
+    confidence: "high"
+    notes: ""
+  honbaTsumoEach:
+    default: 100
+    allowedValues: [0,100]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 17
+        printed: "17"
+    confidence: "high"
+    notes: ""
+  riichiDeposit:
+    default: 1000
+    allowedValues: [1000]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 14
+        printed: "14"
+    confidence: "high"
+    notes: ""
+  dealerContinuation:
+    default: "win_or_exhaustive_tenpai"
+    allowedValues: ["win_or_exhaustive_tenpai","win_only"]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 17
+        printed: "17"
+    confidence: "high"
+    notes: ""
+  formalTenpai:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+    confidence: "high"
+    notes: ""
+  furiten:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 15
+        printed: "15"
+    confidence: "high"
+    notes: ""
+  temporaryFuritenRelease:
+    default: "next_draw_or_claim"
+    allowedValues: ["next_draw_or_claim","next_draw"]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+    confidence: "high"
+    notes: ""
+  riichiAnkan:
+    default: "waits_and_all_decompositions_unchanged"
+    allowedValues: ["forbidden","waits_and_all_decompositions_unchanged","waits_unchanged"]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 14
+        printed: "14"
+    confidence: "high"
+    notes: ""
+  kokushiRobAnkan:
+    default: true
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 15
+        printed: "15"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+    notes: ""
+  openRiichi:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    notes: "기본 역 목록에 없음. true만으로 구현 가능한 옵션이 아니며 별도 완전한 정책 필요."
+  riichiMinimumLiveTiles:
+    default: 1
+    allowedValues: [1,4]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 14
+        printed: "14"
+    confidence: "high"
+    notes: ""
+  doubleWindPairFu:
+    default: 2
+    allowedValues: [2,4]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 21
+        printed: "21"
+    confidence: "high"
+    notes: ""
+  allLastDealerStop:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 17
+        printed: "17"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 18
+        printed: "18"
+    confidence: "high"
+    notes: ""
+  nagashiMangan:
+    default: false
+    allowedValues: [true,false]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    notes: ""
+  renhou:
+    default: "exclusive_mangan"
+    allowedValues: ["disabled","exclusive_mangan","exclusive_baiman","yakuman"]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+    notes: ""
+  chombo:
+    default: "casual_reverse_mangan"
+    allowedValues: ["casual_reverse_mangan","tournament_minus_20000"]
+    mutable: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 17
+        printed: "17"
+    confidence: "high"
+    notes: "이 프로젝트는 비대회 연습이므로 규칙집의 비대회 분기를 선택."
+rules:
+  -
+    id: "tiles.inventory"
+    category: "tiles"
+    name: "34종136장"
+    enabled: true
+    conditions:
+      players: 4
+      suits: ["m","p","s"]
+      ranks: [1,2,3,4,5,6,7,8,9]
+      honors: ["1z","2z","3z","4z","5z","6z","7z"]
+      copiesPerType: 4
+      total: 136
+      redFives: false
+      flowers: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 6
+        printed: "6"
+    confidence: "high"
+  -
+    id: "game.setup"
+    category: "game"
+    name: "배석·친·배패"
+    enabled: true
+    conditions:
+      seatDraw: "four_winds"
+      eastChoosesSeat: true
+      turnOrder: "east_south_west_north"
+      wallStacksPerPlayer: 17
+      stackHeight: 2
+      breakDice: 2
+      dealPackets: [4,4,4,1]
+      dealerAdditionalDraw: 1
+      initialCounts:
+        dealer: 14
+        others: 13
+      startingPoints: 30000
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 7
+        printed: "7"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 8
+        printed: "8"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 9
+        printed: "9"
+    confidence: "high"
+  -
+    id: "game.end"
+    category: "game"
+    name: "반장 종료와 순위"
+    enabled: true
+    conditions:
+      rounds: ["east","south"]
+      dealerRepeats: "win_or_exhaustive_tenpai"
+      multipleRonDealerRepeatsIfAmongWinners: true
+      allLastEarlyStop: false
+      westExtension: false
+      bankruptcy: false
+      loans: true
+      returnPoints: 30000
+      rankBy: "points"
+      ties: "shared_rank"
+      uma: [15000,5000,-5000,-15000]
+      tiedUma: "average_occupied_places"
+      leftoverRiichi: "top_player_or_split_tied_top_round_down"
+      oka: 0
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 17
+        printed: "17"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 18
+        printed: "18"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 19
+        printed: "19"
+    confidence: "high"
+  -
+    id: "wall.dead"
+    category: "wall"
+    name: "왕패와 도라"
+    enabled: true
+    conditions:
+      deadWallSize: 14
+      rinshanCount: 4
+      initialIndicator: "third_stack_from_break_top"
+      maintain14ByTakingLastLiveTile: true
+      doraSuccessors:
+        m: "1234567891"
+        p: "1234567891"
+        s: "1234567891"
+        winds: "12341z"
+        dragons: "5675z"
+      hanPerDora: 1
+      doraNotYaku: true
+      kanDoraImmediate: true
+      uraOnlyForRiichiWinner: true
+      kanUra: true
+      multipleIndicatorsMultiply: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 8
+        printed: "8"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 12
+        printed: "12"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 15
+        printed: "15"
+    confidence: "high"
+  -
+    id: "turn.draw-discard"
+    category: "turn"
+    name: "패 진행과 공개"
+    enabled: true
+    conditions:
+      drawThenDiscard: true
+      afterChiPonNoDraw: true
+      discards:
+        ordered: true
+        rowLength: 6
+        thirdRowMayExtend: true
+      calledMeldsOnRight: true
+      claimedTileRotatedBySource: true
+      meldsCannotRearrangeOrDiscard: true
+      ankanKeepsClosed: true
+      ronKeepsHandClosed: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 10
+        printed: "10"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 11
+        printed: "11"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+    confidence: "high"
+  -
+    id: "call.actions"
+    category: "call"
+    name: "치·퐁·깡"
+    enabled: true
+    conditions:
+      chiFrom: "left_only"
+      ponFrom: "any_other"
+      daiminkanFrom: "any_other"
+      ankan: "own_four_matching_tiles_after_draw"
+      kakan: "add_fourth_to_exposed_pon_after_draw"
+      immediateKanAfterChiPon: false
+      drawReplacementAfterKan: true
+      kanDoraBeforeReplacement: true
+      maxTotalKans: 4
+      fourthKanDoesNotAbort: true
+      kuikae:
+        sameTileForbidden: true
+        oppositeSequenceEndForbidden: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 11
+        printed: "11"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 12
+        printed: "12"
+    confidence: "high"
+  -
+    id: "call.priority"
+    category: "call"
+    name: "부름 우선순위"
+    enabled: true
+    conditions:
+      ronPriority: true
+      ronDeadline: "next_discard_ankan_kakan_or_tsumo"
+      meldClaimDeadline: "next_draw"
+      differentMeldCalls: "first_clear_call"
+      simultaneous: "pon_or_kan_before_chi"
+      touchNextWallTileWaivesPriorClaim: true
+      multipleRon: "all_winners"
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 11
+        printed: "11"
+    confidence: "high"
+  -
+    id: "call.last-tile"
+    category: "call"
+    name: "최종 패"
+    enabled: true
+    conditions:
+      lastLiveDrawAllows: ["tsumo","discard"]
+      lastDiscardAllows: ["ron"]
+      kanWithoutLiveRefill: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+  -
+    id: "win.forms"
+    category: "win"
+    name: "화료형"
+    enabled: true
+    conditions:
+      forms: ["four_melds_one_pair","seven_distinct_pairs","thirteen_orphans"]
+      sequences:
+        sameSuit: true
+        consecutive: true
+        noWrap: true
+        noHonors: true
+      atLeastOneYaku: true
+      doraCannotSupplyMinimumYaku: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 10
+        printed: "10"
+    confidence: "high"
+  -
+    id: "win.maximum"
+    category: "win"
+    name: "최대 점수 해석"
+    enabled: true
+    conditions:
+      select: "maximum_payment_legal_consistent_decomposition"
+      winningTilePlacementMustBeExplicit: true
+      doNotCombineYakuAcrossDifferentDecompositions: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 20
+        printed: "20"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 21
+        printed: "21"
+    confidence: "high"
+  -
+    id: "furiten.policy"
+    category: "furiten"
+    name: "프리텐"
+    enabled: true
+    conditions:
+      ownDiscardMatchesAnyStructuralWait: true
+      includesClaimedOwnDiscards: true
+      noYakuCompletionCounts: true
+      blocksAllRon: true
+      blocksTsumo: false
+      changeWaitsCanClearDiscardFuriten: true
+      passCompletionIncludingRobKan: "temporary_until_next_draw_or_claim"
+      riichiPass: "until_end_of_hand"
+      furitenRiichi: true
+      specialFormsExempt: false
+      kakanTileNotOwnDiscard: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 15
+        printed: "15"
+    confidence: "high"
+  -
+    id: "riichi.policy"
+    category: "riichi"
+    name: "리치"
+    enabled: true
+    conditions:
+      closed: true
+      tenpai: true
+      minimumLiveTiles: 1
+      deposit: 1000
+      loansPermitted: true
+      minimumPositiveBalanceRequired: false
+      announceThenRotateDiscardThenDeposit: true
+      declarationDiscardRonCancels: true
+      calledDeclarationDiscardRotateNextDiscard: true
+      afterDeclaration:
+        handChange: false
+        tsumogiri: true
+        ankan: "drawn_tile_matches_existing_triplet_and_waits_unchanged_and_triplet_in_every_completion"
+        cannotTouchDrawToHand: true
+      uraAvailable: true
+      openRiichi: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 14
+        printed: "14"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 15
+        printed: "15"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 22
+        printed: "22"
+    confidence: "high"
+  -
+    id: "win.rob-kan"
+    category: "win"
+    name: "창깡"
+    enabled: true
+    conditions:
+      kakanRobAllowed: true
+      ankanRobOnly: "yaku.kokushi"
+      furitenApplies: true
+      robbedKanCreatesNoDora: true
+      kanDeclarerPaysRon: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 15
+        printed: "15"
+    confidence: "high"
+  -
+    id: "draw.exhaustive"
+    category: "draw"
+    name: "유국·노텐"
+    enabled: true
+    conditions:
+      exhaustiveOnly: true
+      abortiveDraws: []
+      structuralTenpaiNoYakuRequired: true
+      allWaitsVisibleStillTenpai: true
+      ownFourCannotWaitForFifth: true
+      deadHandNoten: true
+      riichiMustReveal: true
+      tenpaiMustReveal: true
+      mayDeclareNotenEvenIfTenpai: true
+      announceOrder: ["east","south","west","north"]
+      notenPool: 3000
+      transferByTenpaiCount:
+        "0": []
+        "1":
+          eachNotenPays: 1000
+        "2":
+          eachNotenPays: 1500
+          eachTenpaiReceives: 1500
+          projectCanonicalEachEdge: 750
+        "3":
+          eachNotenPaysEach: 1000
+        "4": []
+      twoTenpaiTransferStatus: "750_each_is_project_normalization_not_unique_source_payment_pairing"
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+    confidence: "high"
+  -
+    id: "score.honba-riichi"
+    category: "score"
+    name: "본장·공탁"
+    enabled: true
+    conditions:
+      honbaIncrementOn: ["dealer_win","exhaustive_draw"]
+      resetOn: "nondealer_win_without_dealer_win"
+      ronHonbaPerWinner: 300
+      tsumoHonbaEachOpponent: 100
+      multipleRon:
+        honba: "each_winner"
+        returnWinningRiichiPlayersCurrentBets: true
+        remainingBets: "nearest_winner_after_discarder"
+      drawDepositsCarry: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 14
+        printed: "14"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 16
+        printed: "16"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 17
+        printed: "17"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 20
+        printed: "20"
+    confidence: "high"
+  -
+    id: "score.pao"
+    category: "score"
+    name: "책임지불"
+    enabled: true
+    conditions:
+      yaku: ["yaku.daisangen","yaku.daisuushii"]
+      trigger: "feed_final_required_exposed_set_after_other_required_sets_called"
+      tsumo: "liable_pays_full"
+      thirdPartyRon: "liable_half_discarder_half"
+      liableIsDiscarder: "liable_pays_full"
+      ronHonba: "discarder_all"
+      tsumoHonba: "liable_all"
+      rinshanPao: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 13
+        printed: "13"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+  -
+    id: "fu.policy"
+    category: "fu"
+    name: "부 계산"
+    enabled: true
+    conditions:
+      base: 20
+      closedRonAddition: 10
+      tsumoAddition: 2
+      pinfuTsumoAddition: 0
+      pinfuTsumoTotal: 20
+      pinfuRonTotal: 30
+      chiitoitsuFixed: 25
+      valuePair: 2
+      doubleWindPair: 2
+      sets:
+        sequence: 0
+        openSimpleTriplet: 2
+        closedSimpleTriplet: 4
+        openTerminalHonorTriplet: 4
+        closedTerminalHonorTriplet: 8
+        openSimpleQuad: 8
+        closedSimpleQuad: 16
+        openTerminalHonorQuad: 16
+        closedTerminalHonorQuad: 32
+      ronCompletedTriplet: "open_for_fu_and_ankou_count_only"
+      waitFu:
+        tanki: 2
+        kanchan: 2
+        penchan: 2
+        ryanmen: 0
+        shanpon: 0
+      openOtherwise20Add: 2
+      rounding: "ceil_to_10_except_chiitoitsu25"
+      minimumNormalOpen: 30
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 20
+        printed: "20"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 21
+        printed: "21"
+    confidence: "high"
+  -
+    id: "score.formula"
+    category: "score"
+    name: "점수 공식"
+    enabled: true
+    conditions:
+      unlimitedBase: "fu * 2^(han+2)"
+      lessThanFiveHanBase: "if unlimitedBase>1900 then 2000 else unlimitedBase"
+      kiriagePairs:
+        - [4,30]
+        - [3,60]
+      limits:
+        -
+          hanMin: 5
+          hanMax: 5
+          base: 2000
+          name: "mangan"
+        -
+          hanMin: 6
+          hanMax: 7
+          base: 3000
+          name: "haneman"
+        -
+          hanMin: 8
+          hanMax: 10
+          base: 4000
+          name: "baiman"
+        -
+          hanMin: 11
+          hanMax: null
+          base: 6000
+          name: "sanbaiman"
+      yakumanBase: 8000
+      stackYakuman: false
+      doubleYakuman: false
+      kazoe: false
+      payments:
+        ronDealer: "ceil100(6*base)"
+        ronChild: "ceil100(4*base)"
+        tsumoDealerEach: "ceil100(2*base)"
+        tsumoChildFromDealer: "ceil100(2*base)"
+        tsumoChildFromOtherEach: "ceil100(base)"
+      rounding: "ceil100(x)=100*ceil(x/100)"
+      postPayments: "honba_then_riichi_pool"
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 22
+        printed: "22"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+  -
+    id: "penalty.dead"
+    category: "penalty"
+    name: "화료불가"
+    enabled: true
+    conditions:
+      cannot: ["tsumo","ron","riichi","chi","pon","kan"]
+      noten: true
+      announceBeforeTreatingDead: true
+      triggers: ["wrong_tile_count","invalid_win_without_reveal","invalid_riichi","kuikae","unfixable_out_of_turn_draw"]
+      attemptCallAfterDead: "chombo"
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 15
+        printed: "15"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 32
+        printed: "32"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 33
+        printed: "33"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 34
+        printed: "34"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 35
+        printed: "35"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 36
+        printed: "36"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 37
+        printed: "37"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 38
+        printed: "38"
+    confidence: "high"
+  -
+    id: "penalty.chombo"
+    category: "penalty"
+    name: "촌보"
+    enabled: true
+    conditions:
+      profileBranch: "non_tournament"
+      dealerOffenderPaysEach: 4000
+      childOffenderPaysDealer: 4000
+      childOffenderPaysOtherEach: 2000
+      redeal: true
+      noDealerRotation: true
+      noHonbaIncrement: true
+      returnCurrentRiichiBets: true
+      simultaneousWin: "win_precedes_unless_offense_prevents_resolution"
+      justAfterLastDiscard: "dead_hand_unless_resolution_prevented"
+      triggers: ["invalid_win_with_reveal","call_with_dead_hand","unplayable_exposure","noten_riichi_at_exhaustive_draw","fair_play_cannot_continue"]
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 17
+        printed: "17"
+      -
+        source: "ema-2025-snapshot"
+        pdf: 18
+        printed: "18"
+    confidence: "high"
+yaku:
+  -
+    id: "yaku.riichi"
+    category: "standard-yaku"
+    name: "리치"
+    enabled: true
+    closedValue: 1
+    openValue: null
+    conditions:
+      closed: true
+      validRiichi: true
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.ippatsu"
+    category: "standard-yaku"
+    name: "일발"
+    enabled: true
+    closedValue: 1
+    openValue: null
+    conditions:
+      validRiichi: true
+      byNextOwnDrawInclusive: true
+      noSuccessfulCallsOrKan: true
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.menzen-tsumo"
+    category: "standard-yaku"
+    name: "멘젠쯔모"
+    enabled: true
+    closedValue: 1
+    openValue: null
+    conditions:
+      closed: true
+      winMethod: "tsumo"
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.pinfu"
+    category: "standard-yaku"
+    name: "핑후"
+    enabled: true
+    closedValue: 1
+    openValue: null
+    conditions:
+      closed: true
+      sequences: 4
+      pairNot: ["dragons","seatWind","roundWind"]
+      wait: "ryanmen"
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.iipeikou"
+    category: "standard-yaku"
+    name: "이페코"
+    enabled: true
+    closedValue: 1
+    openValue: null
+    conditions:
+      closed: true
+      identicalSequencePairs: 1
+    exclusions: ["yaku.ryanpeikou"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.tanyao"
+    category: "standard-yaku"
+    name: "탕야오"
+    enabled: true
+    closedValue: 1
+    openValue: 1
+    conditions:
+      allRanks: [2,3,4,5,6,7,8]
+      honors: false
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.dragons"
+    category: "standard-yaku"
+    name: "삼원패"
+    enabled: true
+    closedValue: 1
+    openValue: 1
+    conditions:
+      tripletOrQuadOf: ["5z","6z","7z"]
+      perMatchingSet: true
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.seat-wind"
+    category: "standard-yaku"
+    name: "자풍패"
+    enabled: true
+    closedValue: 1
+    openValue: 1
+    conditions:
+      tripletOrQuadMatches: "seatWind"
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.round-wind"
+    category: "standard-yaku"
+    name: "장풍패"
+    enabled: true
+    closedValue: 1
+    openValue: 1
+    conditions:
+      tripletOrQuadMatches: "roundWind"
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.rinshan"
+    category: "standard-yaku"
+    name: "영상개화"
+    enabled: true
+    closedValue: 1
+    openValue: 1
+    conditions:
+      winMethod: "tsumo"
+      drawSource: "kan_replacement"
+    exclusions: ["yaku.haitei"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.chankan"
+    category: "standard-yaku"
+    name: "창깡"
+    enabled: true
+    closedValue: 1
+    openValue: 1
+    conditions:
+      winMethod: "ron"
+      target: "added_kan_tile"
+    exclusions: []
+    stackingRules:
+      mode: "add"
+      allow: ["yaku.ippatsu"]
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.haitei"
+    category: "standard-yaku"
+    name: "해저로월"
+    enabled: true
+    closedValue: 1
+    openValue: 1
+    conditions:
+      winMethod: "tsumo"
+      drawSource: "last_live_tile"
+    exclusions: ["yaku.rinshan"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.houtei"
+    category: "standard-yaku"
+    name: "하저로어"
+    enabled: true
+    closedValue: 1
+    openValue: 1
+    conditions:
+      winMethod: "ron"
+      liveWallRemaining: 0
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 23
+        printed: "23"
+    confidence: "high"
+  -
+    id: "yaku.double-riichi"
+    category: "standard-yaku"
+    name: "더블리치"
+    enabled: true
+    closedValue: 2
+    openValue: null
+    conditions:
+      closed: true
+      firstOwnTurn: true
+      noCallsOrKanBeforeDeclaration: true
+      validRiichi: true
+    exclusions: ["yaku.riichi"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.chiitoitsu"
+    category: "standard-yaku"
+    name: "치또이츠"
+    enabled: true
+    closedValue: 2
+    openValue: null
+    conditions:
+      closed: true
+      distinctPairs: 7
+      fourIdenticalAsTwoPairs: false
+    exclusions: ["four_meld_decomposition_yaku"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+    paymentRules:
+      fixedFu: 25
+  -
+    id: "yaku.sanshoku-doujun"
+    category: "standard-yaku"
+    name: "삼색동순"
+    enabled: true
+    closedValue: 2
+    openValue: 1
+    conditions:
+      sameSequenceAllThreeSuits: true
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.ittsuu"
+    category: "standard-yaku"
+    name: "일기통관"
+    enabled: true
+    closedValue: 2
+    openValue: 1
+    conditions:
+      sameSuitSequences: ["123","456","789"]
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.chanta"
+    category: "standard-yaku"
+    name: "찬타"
+    enabled: true
+    closedValue: 2
+    openValue: 1
+    conditions:
+      eachMeldAndPairContains: "terminal_or_honor"
+      honorsRequired: true
+      atLeastOneSequence: true
+    exclusions: ["yaku.junchan","yaku.honroutou"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.sanshoku-doukou"
+    category: "standard-yaku"
+    name: "삼색동각"
+    enabled: true
+    closedValue: 2
+    openValue: 2
+    conditions:
+      sameRankTripletOrQuadAllThreeSuits: true
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.sanankou"
+    category: "standard-yaku"
+    name: "삼암각"
+    enabled: true
+    closedValue: 2
+    openValue: 2
+    conditions:
+      concealedTripletsOrQuads: 3
+      ronCompletedTripletConcealed: false
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.sankantsu"
+    category: "standard-yaku"
+    name: "삼깡즈"
+    enabled: true
+    closedValue: 2
+    openValue: 2
+    conditions:
+      declaredQuads: 3
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.toitoi"
+    category: "standard-yaku"
+    name: "또이또이"
+    enabled: true
+    closedValue: 2
+    openValue: 2
+    conditions:
+      tripletsOrQuads: 4
+      pairs: 1
+    exclusions: []
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.shousangen"
+    category: "standard-yaku"
+    name: "소삼원"
+    enabled: true
+    closedValue: 2
+    openValue: 2
+    conditions:
+      dragonTripletsOrQuads: 2
+      remainingDragonPair: true
+    exclusions: []
+    stackingRules:
+      mode: "add"
+      allow: ["yaku.dragons"]
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.honroutou"
+    category: "standard-yaku"
+    name: "혼노두"
+    enabled: true
+    closedValue: 2
+    openValue: 2
+    conditions:
+      only: "terminals_and_honors"
+    exclusions: ["yaku.chanta"]
+    stackingRules:
+      mode: "add"
+      allow: ["yaku.toitoi","yaku.chiitoitsu"]
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 24
+        printed: "24"
+    confidence: "high"
+  -
+    id: "yaku.ryanpeikou"
+    category: "standard-yaku"
+    name: "량페코"
+    enabled: true
+    closedValue: 3
+    openValue: null
+    conditions:
+      closed: true
+      identicalSequencePairs: 2
+    exclusions: ["yaku.iipeikou","yaku.chiitoitsu"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+  -
+    id: "yaku.honitsu"
+    category: "standard-yaku"
+    name: "혼일색"
+    enabled: true
+    closedValue: 3
+    openValue: 2
+    conditions:
+      numberedSuitCount: 1
+      honorsRequired: true
+    exclusions: ["yaku.chinitsu"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+  -
+    id: "yaku.junchan"
+    category: "standard-yaku"
+    name: "준찬"
+    enabled: true
+    closedValue: 3
+    openValue: 2
+    conditions:
+      eachMeldAndPairContains: "terminal"
+      honors: false
+      atLeastOneSequence: true
+    exclusions: ["yaku.chanta","yaku.honroutou"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+  -
+    id: "yaku.renhou"
+    category: "standard-yaku"
+    name: "인화"
+    enabled: true
+    closedValue: 5
+    openValue: null
+    conditions:
+      winMethod: "ron"
+      beforeFirstOwnTurn: true
+      noCallsOrKan: true
+    exclusions: []
+    stackingRules:
+      mode: "exclusive"
+      excludeAllOtherYakuAndDora: true
+      chooseHigherNormalAlternative: true
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+  -
+    id: "yaku.chinitsu"
+    category: "standard-yaku"
+    name: "청일색"
+    enabled: true
+    closedValue: 6
+    openValue: 5
+    conditions:
+      numberedSuitCount: 1
+      honors: false
+    exclusions: ["yaku.honitsu"]
+    stackingRules:
+      mode: "add_han_on_one_consistent_decomposition"
+      ordinaryHanCap: 11
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+  -
+    id: "yaku.kokushi"
+    category: "standard-yakuman"
+    name: "국사무쌍"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      uniqueTerminalHonors: 13
+      oneDuplicate: true
+      robAnkanAllowed: true
+      closedRequired: true
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: false
+  -
+    id: "yaku.chuuren"
+    category: "standard-yakuman"
+    name: "구련보등"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      sameSuit: true
+      baseRanks: "1112345678999"
+      oneExtraRank: "1-9"
+      declaredKan: false
+      closedRequired: true
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: false
+  -
+    id: "yaku.tenhou"
+    category: "standard-yakuman"
+    name: "천화"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      dealer: true
+      initialDealWin: true
+      declaredKan: false
+      closedRequired: true
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: false
+  -
+    id: "yaku.chiihou"
+    category: "standard-yakuman"
+    name: "지화"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      dealer: false
+      firstOwnDraw: true
+      noCallsOrKan: true
+      closedRequired: true
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 25
+        printed: "25"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: false
+  -
+    id: "yaku.suuankou"
+    category: "standard-yakuman"
+    name: "사암각"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      concealedTripletsOrQuads: 4
+      pairs: 1
+      ronOnlyOnPairWait: true
+      closedRequired: true
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: false
+  -
+    id: "yaku.suukantsu"
+    category: "standard-yakuman"
+    name: "사깡즈"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      declaredQuads: 4
+      pairs: 1
+      closedRequired: false
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: true
+  -
+    id: "yaku.ryuuiisou"
+    category: "standard-yakuman"
+    name: "녹일색"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      allowedTiles: "23468s6z"
+      greenDragonRequired: false
+      closedRequired: false
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: true
+  -
+    id: "yaku.chinroutou"
+    category: "standard-yakuman"
+    name: "청노두"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      only: "terminals"
+      closedRequired: false
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: true
+  -
+    id: "yaku.tsuuiisou"
+    category: "standard-yakuman"
+    name: "자일색"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      only: "honors"
+      closedRequired: false
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: true
+  -
+    id: "yaku.daisangen"
+    category: "standard-yakuman"
+    name: "대삼원"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      dragonTripletsOrQuads: 3
+      closedRequired: false
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: true
+  -
+    id: "yaku.shousuushii"
+    category: "standard-yakuman"
+    name: "소사희"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      windTripletsOrQuads: 3
+      remainingWindPair: true
+      closedRequired: false
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: true
+  -
+    id: "yaku.daisuushii"
+    category: "standard-yakuman"
+    name: "대사희"
+    enabled: true
+    closedValue: null
+    openValue: null
+    conditions:
+      windTripletsOrQuads: 4
+      closedRequired: false
+    exclusions: []
+    stackingRules:
+      mode: "single_yakuman_only"
+      ordinaryYakuAndDora: false
+    sourcePages:
+      -
+        source: "ema-2025-snapshot"
+        pdf: 26
+        printed: "26"
+    confidence: "high"
+    yakumanMultiplier: 1
+    openEligible: true
+optionOverridePolicy:
+  requiresNewProfileVersion: true
+  requiresCompleteDependentPolicies: true
+  neverFallbackToMamamo: true
+  examples: ["openRiichi=true만으로 활성화 불가: 선언·공개·벌칙·지불 정책 필요","tripleRonResolution와 tripleRon 및 abortiveDraws 일관성 필요","redFives=true이면 수패별 적5 매수와 정상5 대체를 명시","multipleYakuman=true이면 책임지불 적용 범위와 최대 배수 필요"]
+  defaultOverrideValues: {}
+projectConventions:
+  twoTenpaiEachNotenToEachTenpai: 750
+  reason: "EMA는 각 노텐1500 지불/각 텐파이1500 수령 총액만 규정. 대칭 송금 행렬을 프로젝트 표시 관례로 선택; 별도 게임 규칙 혼합 아님."
+engineContract: "engine-interface.md"
