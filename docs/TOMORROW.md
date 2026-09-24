@@ -1,6 +1,6 @@
 ﻿# 개발 재개 안내 — 2026-09-23
 
-개발 루트: `C:\AI\mamamo`. 먼저 `README.md`, `docs/RESUME.md`, `docs/engine-validation.md`와 이 문서를 읽는다. 이전 원본 `C:\Users\QCELLS\Documents\mamamo-trainer`는 수정하지 않는다. `AGENTS.md`의 현재 작업 지침을 따른다.
+개발 루트: `C:\AI\mamamo`. 새 세션은 루트의 `AGENTS.md`와 `PROJECT_STATUS.md`부터 읽는다. 마작 규칙 작업일 때 `MAHJONG_RULES.md`를 확인한다. 이 문서는 과거 재개 안내로 보관한다.
 
 ## 현재 구현
 

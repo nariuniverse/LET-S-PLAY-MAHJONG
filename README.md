@@ -2,7 +2,7 @@
 
 개발 폴더는 **C:\AI\mamamo**입니다. 이후 코드, 규칙, 테스트와 문서를 모두 이 폴더에 저장합니다.
 
-표준 리치마작 프로필(`standard-riichi`)과 마마모 로컬룰(`mamamo`)을 지원합니다. 규칙 엔진과 자동 테스트, 최적 타패(레벨 1·2·3)·청일색 대기·화료 점수 웹 연습이 구현되어 있습니다. 현재 상태와 재개 순서는 [docs/TOMORROW.md](docs/TOMORROW.md)를, 변경 기록은 [docs/web-progress.md](docs/web-progress.md)를 참고하세요.
+표준 리치마작 프로필(`standard-riichi`)과 마마모 로컬룰(`mamamo`)을 지원합니다. 규칙 엔진과 자동 테스트, 최적 타패(레벨 1·2·3)·청일색 대기·화료 점수 웹 연습이 구현되어 있습니다. 작업을 재개할 때는 [AGENTS.md](AGENTS.md)와 [PROJECT_STATUS.md](PROJECT_STATUS.md)를 먼저 읽으세요. 마작 판정 작업은 [MAHJONG_RULES.md](MAHJONG_RULES.md)를 확인하고, 과거 변경 기록은 [docs/web-progress.md](docs/web-progress.md)를 참고하세요.
 
 ## 설치와 검증
 
@@ -113,7 +113,7 @@ console.log(shanten.shanten, bestDiscards, structural, waits, explainWin(win, ru
 
 Work에서 `C:\AI\mamamo`를 프로젝트 폴더로 열고 다음처럼 요청하면 됩니다.
 
-> README.md와 docs/RESUME.md, docs/engine-validation.md를 읽고 현재 코드 기준으로 이어서 작업해줘. 모든 파일은 C:\AI\mamamo에 저장해줘.
+> AGENTS.md와 PROJECT_STATUS.md를 먼저 읽고 현재 작업과 관련된 파일만 확인해 이어서 작업해줘. 마작 규칙 작업이면 MAHJONG_RULES.md를 확인해줘. 모든 파일은 C:\AI\mamamo에 저장해줘.
 
 수정 전 복구본은 `.backups/mamamo-before-resume-20260922.zip`에 있습니다. 최초 위치 `C:\Users\QCELLS\Documents\mamamo-trainer`도 보존했습니다.
 

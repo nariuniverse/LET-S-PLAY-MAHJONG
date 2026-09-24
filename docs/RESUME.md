@@ -1,5 +1,7 @@
 ﻿# 개발 재개 기록 — 2026-09-22부터
 
+이 문서는 과거 작업 기록이다. 새 세션의 현재 상태와 읽기 순서는 루트의 [AGENTS.md](../AGENTS.md), [PROJECT_STATUS.md](../PROJECT_STATUS.md)를 먼저 확인한다. 마작 규칙 작업은 [MAHJONG_RULES.md](../MAHJONG_RULES.md)를 따른다.
+
 ## 최신 상태 — 2026-09-24
 
 현재 규칙 엔진과 세 가지 웹 연습, 레벨 선택, 점수 계산표, 픽셀 아바타, 사이트 공용 방문자 수가 구현되어 있다. 웹의 아바타 다운로드 링크는 제거했다. 재개 명령과 공개 운영 상태는 [TOMORROW.md](TOMORROW.md), 작업 원칙은 [AGENTS.md](../AGENTS.md)를 확인한다. 마지막 `npm.cmd run check:web`: 14파일 472개 테스트·타입·린트·엔진/웹 빌드 통과. 공개 주소는 `https://lets-play-mahjong.onrender.com/`이다.
