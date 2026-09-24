@@ -26,4 +26,4 @@
 
 ## 현재 상태
 
-공개 주소는 아직 만들지 않았다. Render 무료 배포 설정을 준비했고 로컬 Git 첫 커밋 `3af903f`을 만들었다. 원격 주소는 사용자가 지정한 `https://github.com/nariuniverse/LET-S-PLAY-MAHJONG`으로 설정했다. GitHub 인증 연결이 확인되지 않아 원격 이력 조회와 푸시는 아직 못 했다. `npm.cmd run check:web`에서 14파일 472개 테스트와 빌드가 통과했고 `HOST=0.0.0.0` 운영 서버에서 화면·방문자 API의 HTTP 200을 확인했다. 이 PC에서 `cloudflared` 명령은 확인되지 않았다.
+공개 주소는 아직 만들지 않았다. Render 무료 배포 설정을 준비했고 `https://github.com/nariuniverse/LET-S-PLAY-MAHJONG`의 `main`에 업로드했다. 원격 `main` 커밋 `ef96412`를 확인했다. Render CLI 인증 화면이 이 환경에서 열리지 않아 사용자가 대시보드의 **New > Blueprint**에서 저장소를 연결해야 한다. `npm.cmd run check:web`에서 14파일 472개 테스트와 빌드가 통과했고 `HOST=0.0.0.0` 운영 서버에서 화면·방문자 API의 HTTP 200을 확인했다. 이 PC에서 `cloudflared` 명령은 확인되지 않았다.
