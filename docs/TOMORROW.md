@@ -23,7 +23,7 @@ npm.cmd run dev             # 개발 웹: http://127.0.0.1:5173/
 ## 다음 선택
 
 사용자는 Render 무료 배포를 선택했다. `render.yaml`과 `.node-version`을 준비했고 세부 절차는 `docs/public-access.md`에 있다. 다음 단계는 GitHub 비공개 저장소와 Render 계정을 연결해 Blueprint를 배포하고 `onrender.com` 주소를 확인하는 것이다. **아직 공개 주소 발급·배포는 하지 않았다.** 방문자 수 파일은 무료 서버의 유휴 종료·재시작·재배포 때 초기화될 수 있다. Git 저장소에 원본 사진이나 `.data`, `artifacts/`의 별도 아바타 파일을 넣지 않는다.
-로컬 Git을 초기화하고 배포 파일을 스테이징했다. 아직 첫 커밋과 원격 저장소는 없다. 전체 `check:web` 14파일 472개 테스트와 빌드, 운영 서버 화면·방문자 API의 HTTP 200을 확인했다.
+로컬 Git 첫 커밋 `3af903f`을 만들고 `origin`을 `https://github.com/nariuniverse/LET-S-PLAY-MAHJONG`으로 지정했다. GitHub 인증이 확인되지 않아 원격 조회와 푸시는 아직 못 했다. 전체 `check:web` 14파일 472개 테스트와 빌드, 운영 서버 화면·방문자 API의 HTTP 200을 확인했다.
 
 ## 작업 기록
 
